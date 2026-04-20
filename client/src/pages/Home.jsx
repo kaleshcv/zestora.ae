@@ -220,9 +220,9 @@ function ServicesSection() {
               <p className="service-desc">{s.desc}</p>
             </div>
           ))}
-          <div className="service-card animate-on-scroll" style={{ gridColumn: 'span 3' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-              <div className="service-icon" style={{ flexShrink: 0 }}>
+          <div className="service-card service-card-full animate-on-scroll">
+            <div className="service-card-full-inner">
+              <div className="service-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg>
               </div>
               <div>

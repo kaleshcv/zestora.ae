@@ -2493,6 +2493,51 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
 }
 
+/* ---- Full-width service card ---- */
+.service-card-full {
+  grid-column: 1 / -1;
+}
+
+.service-card-full-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.service-card-full-inner .service-icon {
+  flex-shrink: 0;
+}
+
+/* ---- Industries page overrides ---- */
+.industries-grid-page {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.industry-card-page {
+  text-align: left;
+  padding: 36px;
+}
+
+.industry-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.industry-card-header .industry-icon {
+  margin: 0;
+}
+
+.industry-card-header .industry-title {
+  margin-bottom: 0;
+}
+
+.industry-card-page .industry-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .section {
@@ -2537,6 +2582,10 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 
+  .ngrok-cta-section {
+    padding: 80px 0;
+  }
+
   .ngrok-cta-title {
     font-size: 1.75rem;
   }
@@ -2569,6 +2618,7 @@ h1, h2, h3, h4, h5, h6 {
   .cs-product-detail {
     flex-direction: column;
     align-items: flex-start;
+    padding: 28px;
   }
 
   .cs-product-stat-card {
@@ -2604,8 +2654,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
   }
 
+  .hb-ai-header {
+    padding: 28px 28px 20px;
+  }
+
+  .hb-ai-prompt {
+    padding: 16px 28px;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .contact-info {
@@ -2619,6 +2678,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .footer-brand {
     grid-column: 1 / -1;
+  }
+
+  .page-header {
+    padding: 140px 0 60px;
   }
 }
 
@@ -2650,17 +2713,42 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
   }
 
+  .hero-badge {
+    font-size: 0.6875rem;
+    padding: 6px 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
   .hero-actions .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .hero-visual {
+    margin-top: 48px;
   }
 
   .services-grid {
     grid-template-columns: 1fr;
   }
 
-  .industries-grid {
+  .service-card-full-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .industries-grid,
+  .industries-grid-page {
     grid-template-columns: 1fr;
+  }
+
+  .industry-card-page {
+    padding: 28px;
   }
 
   .testimonials-grid {
@@ -2700,12 +2788,133 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
   }
 
-  .cta-section {
-    padding: 80px 0;
+  .cta-section,
+  .ngrok-cta-section {
+    padding: 64px 0;
   }
 
   .mission-points {
     grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    padding: 120px 0 48px;
+  }
+
+  .page-header-title {
+    font-size: 1.75rem;
+  }
+
+  .page-header-desc {
+    font-size: 1rem;
+  }
+
+  .vm-card {
+    padding: 32px;
+  }
+
+  .ngrok-feature-item {
+    padding: 20px 24px;
+  }
+
+  .ngrok-banner {
+    padding: 28px;
+  }
+
+  .ngrok-banner-extras {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-stat {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 24px 20px;
+  }
+
+  .cs-stat:last-child {
+    border-bottom: none;
+  }
+
+  .cs-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .cs-split-panel {
+    padding: 28px;
+  }
+
+  .cs-products-title {
+    padding: 20px 24px;
+    font-size: 1rem;
+  }
+
+  .cs-products-nav {
+    padding: 0 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cs-product-tab {
+    padding: 12px 16px;
+    font-size: 0.75rem;
+  }
+
+  .cs-product-detail {
+    padding: 24px;
+  }
+
+  .cs-product-name {
+    font-size: 1.25rem;
+  }
+
+  .cs-tech-card {
+    padding: 24px;
+  }
+
+  .cs-impact-group {
+    padding: 24px;
+  }
+
+  .hb-ai-header {
+    padding: 24px 24px 16px;
+  }
+
+  .hb-ai-header h3 {
+    font-size: 1.125rem;
+  }
+
+  .hb-ai-prompt {
+    padding: 14px 24px;
+    font-size: 0.75rem;
+  }
+
+  .hb-usecase-card {
+    padding: 24px;
+  }
+
+  .contact-grid {
+    gap: 32px;
+  }
+
+  .contact-form-wrapper {
+    padding: 28px;
+  }
+
+  .map-wrapper {
+    height: 220px;
+    margin-top: 28px;
+  }
+
+  .content-page {
+    padding: 48px 0 80px;
+  }
+
+  .content-page h2 {
+    font-size: 1.25rem;
+    margin-top: 36px;
   }
 }
 
@@ -2714,20 +2923,112 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 16px;
   }
 
+  .section {
+    padding: 48px 0;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 48px;
+  }
+
   .hero-title {
     font-size: 1.875rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .hero-badge {
+    font-size: 0.625rem;
+    padding: 5px 12px;
   }
 
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
   }
 
   .hero-visual-card {
     padding: 20px;
   }
 
+  .hero-code {
+    font-size: 0.75rem;
+  }
+
   .vm-card {
+    padding: 24px;
+  }
+
+  .vm-card-title {
+    font-size: 1.25rem;
+  }
+
+  .service-card {
     padding: 28px;
+  }
+
+  .industry-card-page {
+    padding: 24px;
+  }
+
+  .ngrok-feature-item {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .ngrok-code-block {
+    padding: 16px;
+  }
+
+  .ngrok-code-block pre,
+  .ngrok-code-lines {
+    font-size: 0.6875rem;
+  }
+
+  .ngrok-banner {
+    padding: 24px 20px;
+  }
+
+  .ngrok-cta-title {
+    font-size: 1.5rem;
+  }
+
+  .ngrok-cta-command {
+    font-size: 0.6875rem;
+    padding: 8px 14px;
+    gap: 8px;
+  }
+
+  .cs-split-panel {
+    padding: 24px;
+  }
+
+  .cs-panel-title {
+    font-size: 1.125rem;
+  }
+
+  .cs-product-detail {
+    padding: 20px;
+  }
+
+  .cs-tech-card {
+    padding: 20px;
+  }
+
+  .cs-impact-group {
+    padding: 20px;
+  }
+
+  .cs-impact-items span {
+    font-size: 0.75rem;
+    padding: 6px 12px;
   }
 
   .hb-usecases-grid {
@@ -2741,5 +3042,121 @@ h1, h2, h3, h4, h5, h6 {
   .hb-highlight-pill {
     font-size: 0.6875rem;
     padding: 6px 14px;
+  }
+
+  .hb-headline {
+    font-size: 1.5rem;
+  }
+
+  .hb-subheadline {
+    font-size: 0.9375rem;
+  }
+
+  .hb-ai-header {
+    padding: 20px 20px 14px;
+  }
+
+  .hb-ai-prompt {
+    padding: 12px 20px;
+    font-size: 0.6875rem;
+    gap: 12px;
+  }
+
+  .hb-usecase-card {
+    padding: 20px;
+  }
+
+  .hb-vision-inner {
+    padding: 32px 20px;
+  }
+
+  .hb-vision-inner h3 {
+    font-size: 1.125rem;
+  }
+
+  .hb-vision-inner p {
+    font-size: 0.875rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+
+  .contact-form-title {
+    font-size: 1.125rem;
+  }
+
+  .about-summary {
+    padding: 20px;
+  }
+
+  .about-value-card {
+    padding: 24px;
+  }
+
+  .approach-step-content {
+    padding: 24px;
+  }
+
+  .mission-point {
+    padding: 16px;
+  }
+
+  .page-header {
+    padding: 100px 0 40px;
+  }
+
+  .page-header-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-section,
+  .ngrok-cta-section {
+    padding: 48px 0;
+  }
+
+  .footer {
+    padding: 48px 0 0;
+  }
+
+  .footer-grid {
+    gap: 28px;
+    margin-bottom: 36px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.875rem;
+  }
+
+  .map-wrapper {
+    height: 180px;
+  }
+
+  .trusted-section {
+    padding: 40px 0;
+  }
+
+  .trusted-label {
+    font-size: 0.6875rem;
+    margin-bottom: 24px;
+  }
+
+  .trusted-logos {
+    gap: 40px;
+  }
+
+  .trusted-logo-item {
+    font-size: 0.9375rem;
+  }
+
+  .tech-tabs {
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+
+  .tech-tab {
+    padding: 8px 16px;
+    font-size: 0.8125rem;
   }
 }

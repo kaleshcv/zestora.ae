@@ -20,14 +20,14 @@ export default function Industries() {
 
       <section className="section">
         <div className="container">
-          <div className="industries-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+          <div className="industries-grid industries-grid-page">
             {industries.map((ind) => (
-              <div className="industry-card animate-on-scroll" key={ind.title} style={{ textAlign: 'left', padding: '36px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 12 }}>
-                  <div className="industry-icon" style={{ margin: 0 }}>{ind.icon}</div>
-                  <h3 className="industry-title" style={{ marginBottom: 0 }}>{ind.title}</h3>
+              <div className="industry-card industry-card-page animate-on-scroll" key={ind.title}>
+                <div className="industry-card-header">
+                  <div className="industry-icon">{ind.icon}</div>
+                  <h3 className="industry-title">{ind.title}</h3>
                 </div>
-                <p className="industry-desc" style={{ fontSize: '0.9375rem', color: 'var(--text-secondary)' }}>{ind.desc}</p>
+                <p className="industry-desc">{ind.desc}</p>
               </div>
             ))}
           </div>

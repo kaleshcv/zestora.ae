@@ -10,6 +10,13 @@
     "build": "cd client && npx vite build",
     "start": "cd server && NODE_ENV=production node server.js"
   },
-  "keywords": ["zestora", "ai", "mern"],
-  "license": "ISC"
+  "keywords": [
+    "zestora",
+    "ai",
+    "mern"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }

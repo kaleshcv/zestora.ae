@@ -460,13 +460,13 @@ function TechStackSection() {
 function CaseStudySection() {
   const [activeProduct, setActiveProduct] = useState(0);
   const products = [
-    { name: 'SURYA', tag: 'Tethered Lighting', desc: '12+ hours continuous lighting at 120m coverage. Ideal for night operations & emergency response.', stat: '12h+', statLabel: 'Flight Time' },
-    { name: 'TRINETRA', tag: 'Surveillance', desc: '24/7 monitoring with thermal imaging for border & infrastructure security.', stat: '24/7', statLabel: 'Monitoring' },
-    { name: 'AINDRASTRA', tag: 'Armed Defense', desc: 'Precision engagement (9mm/7.62mm) that eliminates frontline exposure.', stat: '0', statLabel: 'Risk to Soldiers' },
-    { name: 'GARUDA', tag: 'Kamikaze Strike', desc: '10 km range rapid strike capability. Backpack deployable for field units.', stat: '10km', statLabel: 'Strike Range' },
-    { name: 'MEGHDOOT', tag: 'Fixed-Wing', desc: '50 km strategic range for long-distance reconnaissance missions.', stat: '50km', statLabel: 'Range' },
-    { name: 'VAJRA', tag: 'Fiber-Tethered FPV', desc: 'Anti-jamming technology that works in GPS-denied & hostile RF zones.', stat: '100%', statLabel: 'Jam-Proof' },
-    { name: 'BARBARIKA', tag: 'Interceptor', desc: '400+ km/h high-speed counter-drone defense system.', stat: '400+', statLabel: 'km/h Speed' },
+    { name: 'BEACON', tag: 'Tethered Lighting', desc: '12+ hours continuous lighting at 120m coverage. Ideal for night operations & emergency response.', stat: '12h+', statLabel: 'Flight Time' },
+    { name: 'VIGIL', tag: 'Surveillance', desc: '24/7 monitoring with thermal imaging for border & infrastructure security.', stat: '24/7', statLabel: 'Monitoring' },
+    { name: 'STRYKER', tag: 'Armed Defense', desc: 'Precision engagement (9mm/7.62mm) that eliminates frontline exposure.', stat: '0', statLabel: 'Risk to Soldiers' },
+    { name: 'FALCON X', tag: 'Kamikaze Strike', desc: '10 km range rapid strike capability. Backpack deployable for field units.', stat: '10km', statLabel: 'Strike Range' },
+    { name: 'AERION', tag: 'Fixed-Wing', desc: '50 km strategic range for long-distance reconnaissance missions.', stat: '50km', statLabel: 'Range' },
+    { name: 'IRON LINE', tag: 'Fiber-Tethered FPV', desc: 'Anti-jamming technology that works in GPS-denied & hostile RF zones.', stat: '100%', statLabel: 'Jam-Proof' },
+    { name: 'SHIELDRA', tag: 'Interceptor', desc: '400+ km/h high-speed counter-drone defense system.', stat: '400+', statLabel: 'km/h Speed' },
   ];
 
   return (

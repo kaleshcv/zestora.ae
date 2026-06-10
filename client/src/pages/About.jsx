@@ -14,7 +14,7 @@ export default function About() {
             <div className="about-content animate-on-scroll">
               <h2 className="section-title">Who We Are</h2>
               <p className="section-subtitle" style={{ maxWidth: '100%' }}>
-                ZESTORA ARTIFICIAL INTELLIGENCE DEVELOPING SERVICES LLC is an Abu Dhabi based
+                ZESTORA ARTIFICIAL INTELLIGENCE DEVELOPING SERVICES LLC is a Dubai based
                 technology company specializing in artificial intelligence development, intelligent
                 software services, and digital transformation solutions.
               </p>
@@ -30,7 +30,7 @@ export default function About() {
                 </div>
                 <div className="about-summary-item">
                   <svg className="about-summary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  <span className="about-summary-text"><strong>Headquarters:</strong> Abu Dhabi, United Arab Emirates</span>
+                  <span className="about-summary-text"><strong>Headquarters:</strong> Dubai, United Arab Emirates</span>
                 </div>
                 <div className="about-summary-item">
                   <svg className="about-summary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>

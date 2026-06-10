@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
           <ul>
             <li><strong>Company:</strong> ZESTORA ARTIFICIAL INTELLIGENCE DEVELOPING SERVICES LLC</li>
             <li><strong>Email:</strong> <a href="mailto:info@zestora.ae">info@zestora.ae</a></li>
-            <li><strong>Address:</strong> Musaffah 0,37, Hussein Ali Mohammed, Al-Essa Building, Abu Dhabi, UAE</li>
+            <li><strong>Address:</strong> 206, Sunshine 1, Al Garoud, Dubai, UAE</li>
           </ul>
         </div>
       </section>

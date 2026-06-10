@@ -68,7 +68,7 @@ export default function Contact() {
 
               <div className="contact-info-item">
                 <div className="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><div className="contact-info-label">Address</div><div className="contact-info-text">Musaffah 0,37, Hussein Ali Mohammed, Al-Essa Building, Abu Dhabi, UAE</div></div>
+                <div><div className="contact-info-label">Address</div><div className="contact-info-text">206, Sunshine 1, Al Garoud, Dubai, UAE</div></div>
               </div>
               <div className="contact-info-item">
                 <div className="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -81,11 +81,11 @@ export default function Contact() {
 
               <div className="map-wrapper">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232560.8018456!2d54.3!3d24.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7d2b4500186ab20!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1"
+                  src="https://maps.google.com/maps?q=Al%20Garhoud%2C%20Dubai%2C%20UAE&t=&z=14&ie=UTF8&iwloc=&output=embed"
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="ZESTORA Location - Abu Dhabi, UAE"
+                  title="ZESTORA Location - Dubai, UAE"
                 ></iframe>
               </div>
             </div>

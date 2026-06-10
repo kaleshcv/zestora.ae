@@ -47,7 +47,7 @@ function HeroSection() {
           </p>
           <div className="hero-location">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Abu Dhabi, United Arab Emirates
+            Dubai, United Arab Emirates
           </div>
           <div className="hero-actions">
             <a href="#contact" className="btn btn-primary">
@@ -62,7 +62,7 @@ function HeroSection() {
                 <span className="comment">// Empowering businesses with AI</span><br />
                 <span className="keyword">const</span> zestora = {'{'}<br />
                 &nbsp;&nbsp;name: <span className="string">"ZESTORA AI Services"</span>,<br />
-                &nbsp;&nbsp;location: <span className="string">"Abu Dhabi, UAE"</span>,<br />
+                &nbsp;&nbsp;location: <span className="string">"Dubai, UAE"</span>,<br />
                 &nbsp;&nbsp;expertise: [<span className="string">"AI"</span>, <span className="string">"ML"</span>, <span className="string">"NLP"</span>, <span className="string">"Computer Vision"</span>],<br />
                 &nbsp;&nbsp;<span className="func">transform</span>: (business) =&gt; business.<span className="func">evolve</span>()<br />
                 {'}'};<br /><br />
@@ -116,7 +116,7 @@ function AboutSection() {
             <span className="section-label">About Us</span>
             <h2 className="section-title">Building the Future with <span className="gradient-text">Artificial Intelligence</span></h2>
             <p className="section-subtitle">
-              ZESTORA ARTIFICIAL INTELLIGENCE DEVELOPING SERVICES LLC is an Abu Dhabi based
+              ZESTORA ARTIFICIAL INTELLIGENCE DEVELOPING SERVICES LLC is a Dubai based
               AI company specializing in intelligent software development. We help businesses
               improve operational efficiency, automate workflows, and make smarter decisions
               through advanced AI and data-driven solutions.
@@ -128,7 +128,7 @@ function AboutSection() {
               </div>
               <div className="about-summary-item">
                 <svg className="about-summary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span className="about-summary-text"><strong>Headquarters:</strong> Abu Dhabi, United Arab Emirates</span>
+                <span className="about-summary-text"><strong>Headquarters:</strong> Dubai, United Arab Emirates</span>
               </div>
               <div className="about-summary-item">
                 <svg className="about-summary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -875,7 +875,7 @@ function ContactSection() {
           <div className="contact-info animate-on-scroll">
             <div className="contact-info-item">
               <div className="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-              <div><div className="contact-info-label">Address</div><div className="contact-info-text">Musaffah 0,37, Hussein Ali Mohammed, Al-Essa Building, Abu Dhabi, UAE</div></div>
+              <div><div className="contact-info-label">Address</div><div className="contact-info-text">206, Sunshine 1, Al Garoud, Dubai, UAE</div></div>
             </div>
             <div className="contact-info-item">
               <div className="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -888,11 +888,11 @@ function ContactSection() {
 
             <div className="map-wrapper">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232560.8018456!2d54.3!3d24.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7d2b4500186ab20!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1"
+                src="https://maps.google.com/maps?q=Al%20Garhoud%2C%20Dubai%2C%20UAE&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="ZESTORA Location - Abu Dhabi, UAE"
+                title="ZESTORA Location - Dubai, UAE"
               ></iframe>
             </div>
           </div>

@@ -57,7 +57,7 @@ export default function TermsConditions() {
           <ul>
             <li><strong>Company:</strong> ZESTORA ARTIFICIAL INTELLIGENCE DEVELOPING SERVICES LLC</li>
             <li><strong>Email:</strong> <a href="mailto:info@zestora.ae">info@zestora.ae</a></li>
-            <li><strong>Address:</strong> 206, Sunshine 1, Al Garoud, Dubai, UAE</li>
+            <li><strong>Address:</strong> 105, Fronds Building, Al Garoud, Dubai, UAE</li>
           </ul>
         </div>
       </section>

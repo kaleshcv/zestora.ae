@@ -88,6 +88,19 @@ const gst = (d) => d instanceof Date
   ? new Date(d.getTime() + 4 * 3600 * 1000).toISOString().slice(0, 16).replace('T', ' ')
   : '(no date)';
 
+// The API runs name and company through express-validator's .escape(), so
+// they are stored HTML-escaped ("Al Futtaim &amp; Sons"). Undo that for
+// display. message and email are not escaped, so they are left alone.
+const unescapeHtml = (v) => String(v === null || v === undefined ? '' : v)
+  .replace(/&quot;/g, '"')
+  .replace(/&#x27;/g, "'")
+  .replace(/&#x2F;/g, '/')
+  .replace(/&#x5C;/g, '\\')
+  .replace(/&#96;/g, '`')
+  .replace(/&lt;/g, '<')
+  .replace(/&gt;/g, '>')
+  .replace(/&amp;/g, '&');   // last, so "&amp;lt;" does not become "<"
+
 let query = {};
 if (search) {
   const rx = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
@@ -102,7 +115,7 @@ if (mode === 'count') {
   const q = (v) => '"' + String(v === null || v === undefined ? '' : v).replace(/"/g, '""') + '"';
   print(['createdAt_GST', 'name', 'email', 'phone', 'company', 'message'].map(q).join(','));
   db.contacts.find(query).sort({ createdAt: -1 }).forEach((c) => {
-    print([gst(c.createdAt), c.name, c.email, c.phone, c.company, c.message].map(q).join(','));
+    print([gst(c.createdAt), unescapeHtml(c.name), c.email, c.phone, unescapeHtml(c.company), c.message].map(q).join(','));
   });
 } else {
   if (total === 0) {
@@ -124,10 +137,10 @@ if (mode === 'count') {
       print('  ' + '─'.repeat(66));
       print(`  #${i}   ${gst(c.createdAt)}`);
       print('');
-      print(`    Name      ${c.name || '-'}`);
+      print(`    Name      ${unescapeHtml(c.name) || '-'}`);
       print(`    Email     ${c.email || '-'}`);
       print(`    Phone     ${c.phone || '-'}`);
-      print(`    Company   ${c.company || '-'}`);
+      print(`    Company   ${unescapeHtml(c.company) || '-'}`);
       print('    Message');
       String(c.message || '-').split('\n').forEach((line) => {
         // wrap long lines at ~64 chars so the output stays readable

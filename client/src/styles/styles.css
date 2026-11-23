@@ -537,6 +537,52 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
 }
 
+/* Typewriter animation for the hero code card (components/TypewriterCode.jsx) */
+.hero-code-typewriter {
+  position: relative;
+}
+
+.hero-code-line {
+  display: block;
+  white-space: pre-wrap;
+  min-height: 1.8em;
+}
+
+.hero-code-ghost {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-code-typed {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.35s ease;
+}
+
+.hero-code-typewriter.is-fading .hero-code-typed {
+  opacity: 0;
+}
+
+.hero-code-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: -0.2em;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+  animation: hero-cursor-blink 1s steps(2, start) infinite;
+}
+
+.hero-code-typewriter.is-typing .hero-code-cursor {
+  animation: none;
+}
+
+@keyframes hero-cursor-blink {
+  to { visibility: hidden; }
+}
+
 /* ---- Trusted By / Logos Section ---- */
 .trusted-section {
   padding: 60px 0;

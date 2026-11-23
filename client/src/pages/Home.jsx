@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import TypewriterCode from '../components/TypewriterCode';
 
 export default function Home() {
   useScrollAnimation();
@@ -23,6 +24,22 @@ export default function Home() {
     </>
   );
 }
+
+const heroCode = [
+  { tokens: [{ t: 'comment', s: '// Empowering businesses with AI' }] },
+  { tokens: [{ t: 'keyword', s: 'const' }, { s: ' zestora = {' }] },
+  { tokens: [{ s: '  name: ' }, { t: 'string', s: '"ZESTORA AI Services"' }, { s: ',' }] },
+  { tokens: [{ s: '  location: ' }, { t: 'string', s: '"Dubai, UAE"' }, { s: ',' }] },
+  { tokens: [
+    { s: '  expertise: [' }, { t: 'string', s: '"AI"' }, { s: ', ' }, { t: 'string', s: '"ML"' }, { s: ', ' },
+    { t: 'string', s: '"NLP"' }, { s: ', ' }, { t: 'string', s: '"Computer Vision"' }, { s: '],' },
+  ] },
+  { tokens: [{ s: '  ' }, { t: 'func', s: 'transform' }, { s: ': (business) => business.' }, { t: 'func', s: 'evolve' }, { s: '()' }] },
+  { tokens: [{ s: '};' }] },
+  { tokens: [] },
+  { tokens: [{ s: 'zestora.' }, { t: 'func', s: 'transform' }, { s: '(' }, { t: 'string', s: '"your-business"' }, { s: ');' }] },
+  { tokens: [{ t: 'comment', s: '// → Ready for the future ✓' }], pause: 700 },
+];
 
 function HeroSection() {
   return (
@@ -58,17 +75,7 @@ function HeroSection() {
           </div>
           <div className="hero-visual">
             <div className="hero-visual-card">
-              <div className="hero-code">
-                <span className="comment">// Empowering businesses with AI</span><br />
-                <span className="keyword">const</span> zestora = {'{'}<br />
-                &nbsp;&nbsp;name: <span className="string">"ZESTORA AI Services"</span>,<br />
-                &nbsp;&nbsp;location: <span className="string">"Dubai, UAE"</span>,<br />
-                &nbsp;&nbsp;expertise: [<span className="string">"AI"</span>, <span className="string">"ML"</span>, <span className="string">"NLP"</span>, <span className="string">"Computer Vision"</span>],<br />
-                &nbsp;&nbsp;<span className="func">transform</span>: (business) =&gt; business.<span className="func">evolve</span>()<br />
-                {'}'};<br /><br />
-                zestora.<span className="func">transform</span>(<span className="string">"your-business"</span>);<br />
-                <span className="comment">// → Ready for the future ✓</span>
-              </div>
+              <TypewriterCode lines={heroCode} />
             </div>
           </div>
         </div>

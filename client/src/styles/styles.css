@@ -239,31 +239,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.375rem;
-  font-weight: 800;
   color: var(--text-primary);
   text-decoration: none;
-  letter-spacing: -0.5px;
 }
 
 .nav-logo:hover {
   color: var(--text-primary);
 }
 
-.nav-logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--gradient-primary);
-  border-radius: var(--radius-sm);
-  display: flex;
+/* ---- Brand lockup (logo mark + wordmark), see components/Logo.jsx ---- */
+.brand {
+  display: inline-flex;
   align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.brand-name {
+  font-size: 1.25rem;
   font-weight: 800;
-  color: #fff;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.brand-tagline {
+  margin-top: 6px;
+  font-size: 0.5625rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #B9B7C4;
+}
+
+.footer-logo .brand-name {
+  font-size: 1.375rem;
+}
+
+@media (max-width: 480px) {
+  .nav-logo .brand-mark {
+    height: 30px;
+    width: auto;
+  }
+
+  .nav-logo .brand-name {
+    font-size: 1.125rem;
+  }
 }
 
 .nav-links {
@@ -2288,11 +2322,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.25rem;
-  font-weight: 800;
   color: var(--text-primary);
   margin-bottom: 16px;
   text-decoration: none;

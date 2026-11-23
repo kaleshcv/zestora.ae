@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Brand from './Logo';
 
 export default function Footer() {
   return (
@@ -6,8 +7,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link to="/" className="footer-logo">
-              ZESTORA
+            <Link to="/" className="footer-logo" aria-label="ZESTORA home">
+              <Brand markSize={44} tagline />
             </Link>
             <p className="footer-desc">AI-powered solutions and digital transformation services, helping businesses automate, innovate, and grow with intelligent technology.</p>
             <div className="footer-socials">

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Brand from './Logo';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -65,8 +66,8 @@ export default function Navbar() {
     <>
       <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
         <div className="container">
-          <Link to="/" className="nav-logo">
-            ZESTORA
+          <Link to="/" className="nav-logo" aria-label="ZESTORA home">
+            <Brand markSize={34} />
           </Link>
 
           <div className="nav-links">
